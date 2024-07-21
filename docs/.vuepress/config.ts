@@ -12,8 +12,8 @@ const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
-  theme: 'vdoing', // 使用npm主题包
-  // theme: resolve(__dirname, '../../vdoing'), // 使用本地主题包
+  // theme: 'vdoing', // 使用npm主题包
+  theme: resolve(__dirname, '../../vdoing'), // 使用本地主题包
 
   locales: {
     '/': {
@@ -31,7 +31,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '首页', link: '/' },
       {
         text: '类别',
-        link: '/ui/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        link: '/note/all/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           { text: '根及根茎类', link: '/note/root/' },
@@ -51,36 +51,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         text: '性味',
         link: '/tags/',
-        items: [
-          { text: '苦', link: '/tags/?tag=苦' },
-          { text: '甘', link: '/tags/?tag=甘' },
-          { text: '辛', link: '/tags/?tag=辛' },
-          { text: '温', link: '/tags/?tag=温' },
-          { text: '寒', link: '/tags/?tag=寒' },
-          { text: '平', link: '/tags/?tag=平' },
-          { text: '微寒', link: '/tags/?tag=微寒' },
-          { text: '咸', link: '/tags/?tag=咸' },
-          { text: '有毒', link: '/tags/?tag=有毒' },
-          { text: '酸', link: '/tags/?tag=酸' },
-          { text: '涩', link: '/tags/?tag=涩' },
-          { text: '微温', link: '/tags/?tag=微温' },
-          { text: '微苦', link: '/tags/?tag=微苦' },
-          { text: '凉', link: '/tags/?tag=凉' },
-          { text: '有小毒', link: '/tags/?tag=有小毒' },
-          { text: '淡', link: '/tags/?tag=淡' },
-          { text: '热', link: '/tags/?tag=热' },
-          { text: '有大毒', link: '/tags/?tag=有大毒' },
-          { text: '微辛', link: '/tags/?tag=微辛' },
-          { text: '微甘', link: '/tags/?tag=微甘' },
-          { text: '大寒', link: '/tags/?tag=大寒' },
-          { text: '大热', link: '/tags/?tag=大热' },
-          { text: '微酸', link: '/tags/?tag=微酸' },
-          { text: '气微', link: '/tags/?tag=气微' },
-        ],
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    // logo: '/img/logo.png', // 导航栏logo
+    logo: '/img/中医logo.png', // 导航栏logo
     // repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -93,7 +67,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // category: false, // 是否打开分类功能，默认true
     // tag: false, // 是否打开标签功能，默认true
-    // archive: false, // 是否打开归档功能，默认true
+    archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
