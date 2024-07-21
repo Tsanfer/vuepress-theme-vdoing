@@ -2,6 +2,7 @@
 
 <details>
 
+<summary>原项目</summary>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/vuepress-theme-vdoing"><img alt="npm" src="https://img.shields.io/npm/v/vuepress-theme-vdoing"></a>
