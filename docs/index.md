@@ -6,7 +6,7 @@ heroText: 广西特色药材综合知识库
 tagline: 展现广西作为“中药材之乡”示范作用，促进中医药文化的传播和交流
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: img/中药材.png # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+bannerBg: [中药材](https://cdn.tsanfer.com/image/2024-7-21_22-14-11.png) # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 # features: # 可选的
 #   - title: 前端
