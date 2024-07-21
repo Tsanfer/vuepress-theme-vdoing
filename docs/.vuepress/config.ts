@@ -105,8 +105,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: '', // 必需
-      link: '', // 可选的
+      name: '.', // 必需
+      link: '.', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
