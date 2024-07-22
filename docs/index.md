@@ -2,7 +2,7 @@
 home: true
 # heroImage: /img/中药材.png
 # heroImage: https://www.jd-link.com/uploadfiles/2022/03/%E4%B8%AD%E8%8D%AF%E6%9D%90.jpg
-heroText: 广西特色药材综合知识库
+heroText: 广西特色中药材综合知识库
 tagline: 展现广西作为“中药材之乡”示范作用，促进中医药文化的传播和交流
 # actionText: 立刻进入 →
 # actionLink: /web/

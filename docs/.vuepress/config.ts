@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 // import baiduCode from './config/baiduCode' // 百度统计hm码
 // import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
+const DOMAIN_NAME = 'aliecs.tsanfer.com' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -18,7 +18,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "广西特色药材综合知识库",
+      title: "广西特色中药材综合知识库",
       description: '展现广西作为“中药材之乡”示范作用，促进中医药文化的传播和交流',
     }
   },
@@ -163,7 +163,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     [
       'meta',
       {
-        name: '广西特色药材综合知识库',
+        name: '广西特色中药材综合知识库',
         content: '展现广西作为“中药材之乡”示范作用，促进中医药文化的传播和交流',
       },
     ],
@@ -223,10 +223,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             title: '在Bing中搜索',
             frontUrl: 'https://cn.bing.com/search?q=',
           },
-          {
-            title: '通过百度搜索本站的',
-            frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
-          },
+          // {
+          //   title: '通过百度搜索本站的',
+          //   frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
+          // },
         ],
       }
     ],
