@@ -18,7 +18,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "广西特色中药材综合知识库",
+      title: "桂药本草云库",
       description: '展现广西作为“中药材之乡”示范作用，促进中医药文化的传播和交流',
     }
   },
@@ -163,7 +163,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     [
       'meta',
       {
-        name: '广西特色中药材综合知识库',
+        name: '桂药本草云库',
         content: '展现广西作为“中药材之乡”示范作用，促进中医药文化的传播和交流',
       },
     ],
